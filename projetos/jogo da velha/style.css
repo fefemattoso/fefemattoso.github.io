@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+/* Adicione as seguintes regras CSS para agrupar os quadrantes corretamente */
+.row:nth-child(1) .cell {
+    border-top: none;
+}
+
+.row:nth-child(3) .cell {
+    border-bottom: none;
+}
+
+.cell:nth-child(1) {
+    border-left: none;
+}
+
+.cell:nth-child(3) {
+    border-right: none;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#reset-button {
+    font-size: 16px;
+    margin-top: 10px;
+}

@@ -1,0 +1,39 @@
+/* CSS HEX */
+--walnut: #744c1c;
+--rob-roy: #ebc46b;
+--go-ben: #747c4c;
+--kumera: #946c2d;
+--green-smoke: #aba46b;
+--cocoa-brown: #342423;
+--dingley: #748044;
+--husk: #b4a45c;
+--hippie-green: #487848;
+--wattle: #dcc848;
+
+
+/* SCSS HEX */
+$walnut: #744c1c;
+$rob-roy: #ebc46b;
+$go-ben: #747c4c;
+$kumera: #946c2d;
+$green-smoke: #aba46b;
+$cocoa-brown: #342423;
+$dingley: #748044;
+$husk: #b4a45c;
+$hippie-green: #487848;
+$wattle: #dcc848;
+
+
+/* SCSS RGB */
+--walnut: rgba(116,76,28,1);
+--rob-roy: rgba(235,196,107,1);
+--go-ben: rgba(116,124,76,1);
+--kumera: rgba(148,108,45,1);
+--green-smoke: rgba(171,164,107,1);
+--cocoa-brown: rgba(52,36,35,1);
+--dingley: rgba(116,128,68,1);
+--husk: rgba(180,164,92,1);
+--hippie-green: rgba(72,120,72,1);
+--wattle: rgba(220,200,72,1);
+
+

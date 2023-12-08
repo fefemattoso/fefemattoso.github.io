@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #d8c7ff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    align-items: center;
+    font-size: 120%;
+}
+
+#logo{
+    width: 7vw;
+}
+
+.mc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+#divBusca{
+    background-color:#9ea3e4;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    height: 30px;
+  }
+  
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style: normal;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:250px;
+  }
+
+#txtBusca::placeholder{
+    color: black;
+}
+
+#btnBusca{
+    width: 30px;
+}
+
+main{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    /* display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 18px;
+    width: 100vw;
+    height: 80vh;
+    margin-left: 300px;
+}
+
+#news{
+    width: 16vw;
+}
+
+.d1, .d2, .d3{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-justify: newspaper;
+    font-size: 70%;
+    justify-content: space-around;
+}
+
+.trends{
+    height: 400px;
+    width: 250px;
+    background: #fff;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+.trends h3{
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.trends p{
+    border-bottom: 1px solid black;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+}
+
+@media(max-width)

@@ -1,0 +1,317 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Grandstander:wght@200&family=Griffy&family=IM+Fell+Great+Primer+SC&display=swap');
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: Griffy;
+}
+
+header {
+    background-color: #5c1717;
+    color: #fff4a5;
+    text-align: center;
+    padding: 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+main{
+    width: 100%;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #dad1d1;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f3e885;
+    transition: 0.3s;
+  }
+
+  .menu-item:hover::before {
+    width: 100%;
+  }
+
+#home{
+    background-color: rgb(127, 150, 110);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../imgs/final.jpg);
+    background-size: cover;
+}
+
+.welcome{
+    margin-bottom: 200px;
+    margin-left: 200px;
+    color: #c6e6ac;
+}
+
+#about{
+    background-color: rgb(251, 199, 232);
+    height: 850px;
+}
+
+#projects{
+    height: 850px;
+    background-color: rgb(83, 159, 102);
+}
+
+#skills{
+    height: 850px;
+    background-color: rgb(127, 158, 220);
+}
+
+#contact{
+    height: 850px;
+    background-color: rgb(253, 153, 217);
+}
+
+nav {
+    background-color: #683535;
+    text-align: center;
+}
+
+nav a {
+    color: #fff4a5;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #602716;
+}
+
+.container {
+    padding: 20px;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.me{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    border: 10px #5e714e;
+    border-style: solid;
+    border-radius: 280px;
+    transform: rotate(300deg);
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Grandstander:wght@200&family=Griffy&family=IM+Fell+Great+Primer+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: Griffy;
+}
+
+header {
+    background-color: #5c1717;
+    color: #fff4a5;
+    text-align: center;
+    padding: 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+main {
+    width: 100%;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #dad1d1;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f3e885;
+    transition: 0.3s;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+#home {
+    background-color: rgb(127, 150, 110);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../imgs/finalnobg.jpg);
+    background-size: cover;
+}
+
+/* .welcome {
+    margin-bottom: 200px;
+    text-align: center;
+    color: #c6e6ac;
+} */
+
+.welcome {
+    color: #c6e6ac;
+    background: -webkit-linear-gradient(transparent, transparent), url(https://i.pinimg.com/originals/e6/fb/82/e6fb8277212e7a03cf487f3c6de145bf.gif) repeat;
+    background: -o-linear-gradient(transparent, transparent) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      -webkit-background-clip: text;
+    margin-bottom: 200px;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: rgb(41, 54, 33) 0.1em 0.1em 0.2em;
+    border: 5px #5e714e;
+    
+  }
+
+#about,
+#projects,
+#skills,
+#contact {
+    height: 850px;
+}
+
+#about {
+    background-color: rgb(137, 105, 151);
+    text-align: center;
+    align-items: center;
+    background-image: url(https://cdn.gencraft.com/prod/user/0ede3881-272c-4860-9640-c71a909130d5/a2e00e36-830a-453b-bded-918dccf9fc49/image/image1_0.jpg?Expires=1702131203&Signature=YQk4ZxpPt-jHK1HXsyjdqDTL9hQX5hKZuoOE3nY454o9MxRlqqDMmyHp-RAxAicE744z8LJxVi7pHvQ-hFBwBDXF7gvDaTYE4NNAcXuvB9dYmBtF1cLBcZcpks1imwBs5MtEWwInuwP1khIMKmMtrdttDN5xIIjo0BXpCBZ7CJKRtkH1NZmqj3GVwJFBxmNJGDLWY0e7GLyeEgbDJx5q4SEtslfBDR6jw6Ov8WaExFPt5~AWE6MTiM5S8pp~G-66m5grLgxsImZMxmxAog1OJ5n~z482FluVz7EaJJXkOWJZdh67DeQMWllrPaA3rhBs31pJidiEsJyzx66jTQLUfQ__&Key-Pair-Id=K3RDDB1TZ8BHT8);
+    
+}
+
+#projects {
+    background-color: rgb(83, 159, 102);
+    text-align: center;
+    align-items: center;
+}
+
+#skills {
+    background-color: rgb(127, 158, 220);
+    text-align: center;
+    align-items: center;
+}
+
+#contact {
+    background-color: rgb(253, 153, 217);
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #683535;
+    text-align: center;
+}
+
+nav a {
+    color: #fff4a5;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #602716;
+}
+
+.container {
+    padding: 20px;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.me {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    border: 10px #5e714e;
+    border-style: solid;
+    border-radius: 280px;
+    transform: rotate(300deg);
+}
+
+.aboutinfos{
+    
+}
+
+.icon{
+    border-radius: 400px;
+
+}
+
+#icon{
+    width: 150px;
+    height: 150px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #home {
+        height: 600px;
+    }
+    
+    .welcome {
+        margin-bottom: 100px;
+        margin-left: 50px;
+    }
+    
+    .me {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+}
+
+/* Adicione mais media queries conforme necessário */

@@ -1,0 +1,14 @@
+marrom escuro - HEX : #47301e
+RGB : 71, 48, 30
+
+marrom claro - HEX : #7b5b42
+RGB : 123, 91, 66
+
+marrom red - HEX : #4b1b17
+RGB : 75, 27, 23
+
+marrom red dark - HEX : #602716
+RGB : 96, 39, 22
+
+
+
