@@ -176,7 +176,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-image: url(../imgs/finalnobg.jpg);
+    background-image: url(../imgs/final.jpg);
     background-size: cover;
 }
 
@@ -204,6 +204,7 @@ main {
 #about,
 #projects,
 #skills,
+#hobbies,
 #contact {
     height: 850px;
 }
@@ -212,8 +213,8 @@ main {
     background-color: rgb(137, 105, 151);
     text-align: center;
     align-items: center;
-    background-image: url(https://cdn.gencraft.com/prod/user/0ede3881-272c-4860-9640-c71a909130d5/a2e00e36-830a-453b-bded-918dccf9fc49/image/image1_0.jpg?Expires=1702131203&Signature=YQk4ZxpPt-jHK1HXsyjdqDTL9hQX5hKZuoOE3nY454o9MxRlqqDMmyHp-RAxAicE744z8LJxVi7pHvQ-hFBwBDXF7gvDaTYE4NNAcXuvB9dYmBtF1cLBcZcpks1imwBs5MtEWwInuwP1khIMKmMtrdttDN5xIIjo0BXpCBZ7CJKRtkH1NZmqj3GVwJFBxmNJGDLWY0e7GLyeEgbDJx5q4SEtslfBDR6jw6Ov8WaExFPt5~AWE6MTiM5S8pp~G-66m5grLgxsImZMxmxAog1OJ5n~z482FluVz7EaJJXkOWJZdh67DeQMWllrPaA3rhBs31pJidiEsJyzx66jTQLUfQ__&Key-Pair-Id=K3RDDB1TZ8BHT8);
-    
+    background-image: url(https://static.vecteezy.com/system/resources/previews/032/171/043/original/strawberry-repeat-pattern-seamless-background-with-fruits-vector.jpg);
+    background-size: cover;
 }
 
 #projects {
@@ -224,6 +225,12 @@ main {
 
 #skills {
     background-color: rgb(127, 158, 220);
+    text-align: center;
+    align-items: center;
+}
+
+#hobbies {
+    background-color: rgb(18, 36, 73);
     text-align: center;
     align-items: center;
 }
@@ -275,6 +282,15 @@ h2 {
 }
 
 .aboutinfos{
+    background-color: #c6e6ac;
+    border-radius: 100px;
+    width: 70%;
+    height: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
