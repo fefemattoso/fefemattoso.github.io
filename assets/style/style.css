@@ -177,7 +177,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     background-image: url(https://static.vecteezy.com/system/resources/previews/032/171/043/original/strawberry-repeat-pattern-seamless-background-with-fruits-vector.jpg);
-    background-size: cover;
+    background-size: contain;
 }
 
 .welcome{
@@ -242,6 +242,9 @@ main {
     background-color: rgb(83, 159, 102);
     text-align: center;
     align-items: center;
+    background-image: url(https://i.pinimg.com/564x/49/09/9f/49099fda51804282b00c31a4215f411d.jpg);
+    background-size: contain;
+    
 }
 
 nav {
@@ -352,7 +355,7 @@ a{
    }
    
    .card2:hover {
-    box-shadow: 0px 0px 30px 1px rgba(253, 253, 253, 0.629);
+    box-shadow: 0px 0px 30px 1px rgb(255, 255, 255);
    }
 
    .imgskills{
