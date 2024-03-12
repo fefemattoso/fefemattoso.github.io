@@ -1,0 +1,71 @@
+body {
+    background-color: #f7ede2; /* Rosa claro queimado */
+    color: #4a4a4a; /* Marrom café */
+}
+
+.navbar {
+    background-color: #8b5d33; /* Marrom café */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #f7ede2 !important; /* Rosa claro queimado */
+}
+
+.navbar-toggler-icon {
+    background-color: #f7ede2; /* Rosa claro queimado */
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mt-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #8b5d33; /* Marrom café */
+}
+
+.card {
+    background-color: #f7ede2; /* Rosa claro queimado */
+    border: 1px solid #8b5d33; /* Marrom café */
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-title {
+    color: #8b5d33; /* Marrom café */
+}
+
+.btn-primary {
+    background-color: #8b5d33; /* Marrom café */
+    border-color: #8b5d33; /* Marrom café */
+}
+
+.btn-primary:hover {
+    background-color: #634129; /* Marrom café mais escuro */
+    border-color: #634129; /* Marrom café mais escuro */
+}
+
+.list-group-item {
+    background-color: #f7ede2; /* Rosa claro queimado */
+    border: 1px solid #8b5d33; /* Marrom café */
+}
+
+.remove-from-cart {
+    background-color: #d9534f; /* Vermelho escuro para o botão de remover */
+    border-color: #d9534f; /* Vermelho escuro para o botão de remover */
+}
+
+.remove-from-cart:hover {
+    background-color: #c9302c; /* Vermelho mais escuro ao passar o mouse */
+    border-color: #ac2925; /* Vermelho mais escuro ao passar o mouse */
+}

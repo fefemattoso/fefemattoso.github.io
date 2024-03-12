@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Grandstander:wght@200&family=Griffy&family=IM+Fell+Great+Primer+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: Griffy;
+}
+
+.navbar {
+    background-color: #617080;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+header {
+    background-color: rgb(127, 150, 110);
+    color: #462f2f;
+}
+
+.welcome {
+    margin-top: 100px;
+    font-size: 2.5rem;
+}
+
+.aboutinfos {
+    margin-top: 50px;
+}
+
+.me {
+    margin-top: 20px;
+    border: 5px solid #000000;
+}
+
+#about,
+#projects,
+#skills,
+#hobbies {
+    height: 700px;
+}
+
+#home {
+    background-color: rgb(127, 150, 110);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/032/171/043/original/strawberry-repeat-pattern-seamless-background-with-fruits-vector.jpg);
+    background-size: contain;
+}
+
+#about {
+    background-color: rgb(83, 159, 102);
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#projects {
+    background-color: rgb(235, 200, 202);
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+#skills {
+    background-color: rgb(83, 159, 102);
+    text-align: center;
+    align-items: center;
+}
+
+#hobbies {
+    background-color: rgb(235, 200, 202);
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+        background-color: #db71ac; /* Rosa claro queimado */
+        border: 1px solid #993165; /* Marrom café */
+        margin-bottom: 20px;
+        height: 15%;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.skillslogo {
+    max-width: 100px;
+    margin: 20px;
+}
+
+#contact {
+    background-color: rgb(83, 159, 102);
+    text-align: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/564x/49/09/9f/49099fda51804282b00c31a4215f411d.jpg);
+    background-size: contain;
+    
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: rgb(127, 150, 110);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

@@ -1,94 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/newstyle.css">
     <link rel="shortcut icon" href="assets/imgs/lua.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Grandstander:wght@200&family=Griffy&family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Grandstander:wght@200&family=Griffy&family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="assets/imgs/text-1701343831209.png">
-    </header>
-    <main>
-    <nav>
-        <a href="#home" class="menu-item">Home</a>
-        <a href="#about" class="menu-item">About</a>
-        <a href="#projects" class="menu-item">Projects</a>
-        <a href="#skills" class="menu-item">Skills</a>
-        <a href="#hobbies" class="menu-item">Hobbies</a>
-        <a href="#contact" class="menu-item">Contact</a>
-    </nav>
-    <div class="container" id="home">
-        <h1 class="welcome">welcome to my world !</h1>
-    </div>
-    <div class="container" id="about">
-        <h1>⍟ About me ⍟</h1>
-        <div class="aboutinfos">
-            <h2>I'm Maria Fernanda, a Web Developer, Graphic Designer and Event Technician .</h2>
-            <img src="assets/imgs/me/1186d2a8-dd33-4d17-9e0b-da49c65aa1ec.jpg" class="me">
-        </div>
-        
-    </div>
 
-    <div class="container" id="projects">
-        <h1>⍟ My projects ⍟</h1>
-        <div class="cards">
-        <a href="projetos/proj1/pgn1.html" class="card">
-            <div class="card2">
-                <div>
-                    <h2>My first project</h2>
-                </div>
-            </div>
-        </a>
-        
-        <a href="projetos/tarefa/loja.html" class="card">
-            <div class="card2">
-                <div>
-                    <h2>AutsGarden</h2>
-                </div>
-            </div>
-        </a>
+<nav class="navbar navbar-expand-lg navbar-light background-color" style="background-color: rgb(145, 173, 89);">
+    <a class="navbar-brand" href="#">Meu Portfólio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-        <a href="projetos/dinos/dinos.html" class="card">
-            <div class="card2">
-                <div>
-                    <h2>Dinosaurs</h2>
-                </div>
-            </div>
-        </a>
+<header class="container-fluid text-center py-5">
+    <img src="assets/imgs/text-1701343831209.png" class="img-fluid">
+</header>
 
-        <a href="projetos/calcsalario/fff.html" class="card">
-            <div class="card2">
-                <div>
-                    <h2>Salary Calculator</h2>
-                </div>
+<main class="container">
+
+    <section id="home" class="container py-5">
+        <h1 class="display-4 text-center">Welcome to my world!</h1>
+    </section>
+
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/imgs/me/1186d2a8-dd33-4d17-9e0b-da49c65aa1ec.jpg" class="img-fluid rounded-circle" alt="Maria Fernanda">
             </div>
-        </a>
+            <div class="col-md-6">
+                <h2 class="display-4">⍟ About me</h2>
+                <p class="lead">I'm Maria Fernanda, a Web Developer, Graphic Designer, and Event Technician.</p>
+            </div>
         </div>
-    </div>
-    <div class="container" id="skills">
-        <h1>⍟ Skills ⍟</h1>
-        <div class="imgskills">
-            <img class="skillslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png">
-            <img class="skillslogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png">
-            <img class="skillslogo" src="https://seeklogo.com/images/O/ottawa-js-logo-394DB38073-seeklogo.com.png">
+    </section>
+
+    <section id="projects" class="container py-5">
+        <h2 class="display-4 text-center">My projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <a href="projetos/proj1/pgn1.html" style="color: inherit;">
+                        <!-- <img src="..." class="card-img-top" alt="Project 1"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">My first project</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="projetos/BioAcademy/index.html" style="color: inherit;">
+                        <!-- <img src="..." class="card-img-top" alt="Project 2"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">BioAcademy</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="projetos/MagicCoffee/index.html" style="color: inherit;">
+                        <!-- <img src="..." class="card-img-top" alt="Project 1"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">MagicCoffee</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="projetos/tarefa/loja.html" style="color: inherit;">
+                        <!-- <img src="..." class="card-img-top" alt="Project 3"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">AutsGarden</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="projetos/calcsalario/fff.html" style="color: inherit;">
+                        <!-- <img src="..." class="card-img-top" alt="Project 4"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">CalcSalario</h5>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!-- Repeat similar blocks for other projects -->
+
         </div>
-    </div>
-    <div class="container" id="hobbies">
-        <h1>⍟ My hobbies ⍟</h1>
-    </div>
-    <div class="container" id="contact">
-        <h1>⍟ Contact ⍟</h1>
-        <div class="icons">
-            <a href="https://www.instagram.com/fefe.jpeg/"><img src="assets/imgs/insta.jpg" alt="" class="icon" id="icon"></a>
-            <a href="https://github.com/fefemattoso#--"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" id="icon"></a>
-            <a href=""><img src="assets/imgs/email.jpg" alt="" class="icon" id="icon"></a>
+    </section>
+
+    <section id="skills" class="container py-5">
+        <h4 class="display-4 text-center">Skills</h4>
+        <div class="row justify-content-center">
+            <img class="skillslogo mx-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png">
+            <img class="skillslogo mx-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png">
+            <img class="skillslogo mx-2" src="https://seeklogo.com/images/O/ottawa-js-logo-394DB38073-seeklogo.com.png">
+            <img class="skillslogo mx-2" src="https://static-00.iconduck.com/assets.00/sdk-react-native-icon-512x490-ynyk8t4w.png">
+            <img class="skillslogo mx-2" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_wordmark_logo_icon_146620.png">
+
         </div>
-    </div>
-    </main>
-    <script src="assets/js/script.js"></script>
+    </section>
+
+    <section id="hobbies" class="container py-5">
+        <h4 class="display-4 text-center">My hobbies</h4>
+        <div class="row justify-content-center">
+            <img class="skillslogo mx-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/768px-HTML5_Badge.svg.png">
+            <img class="skillslogo mx-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png">
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h4 class="display-4 text-center">Contact</h4>
+        <div class="row justify-content-center">
+            <a href="https://www.instagram.com/fefe.jpeg/" class="mx-3"><img src="assets/imgs/insta.jpg" alt="" class="icon"></a>
+            <a href="https://github.com/fefemattoso#--" class="mx-3"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="icon"></a>
+            <a href="#" class="mx-3"><img src="assets/imgs/email.jpg" alt="" class="icon"></a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="container-fluid text-center py-3">
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
