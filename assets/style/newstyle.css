@@ -3,6 +3,10 @@
 body {
     margin: 0;
     padding: 0;
+    /* background-image: url('https://cdn130.picsart.com/322567241171211.png?type=webp&to=min&r=250'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: bisque;
     font-family: Griffy;
 }
@@ -20,8 +24,9 @@ body {
 }
 
 header {
-    background-color: rgb(127, 150, 110);
+    background-color: rgb(92, 110, 79);
     color: #462f2f;
+    margin-bottom: 50px;
 }
 
 .welcome {
@@ -39,10 +44,12 @@ header {
 }
 
 #about,
-#projects,
 #skills,
 #hobbies {
     height: 700px;
+    border: 5px solid green;
+    border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 #home {
@@ -53,6 +60,9 @@ header {
     justify-content: space-evenly;
     background-image: url(https://static.vecteezy.com/system/resources/previews/032/171/043/original/strawberry-repeat-pattern-seamless-background-with-fruits-vector.jpg);
     background-size: contain;
+    border: 5px solid green;
+    border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 #about {
@@ -60,6 +70,9 @@ header {
     text-align: center;
     align-items: center;
     background-size: cover;
+    border: 5px solid green;
+    border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 #projects {
@@ -69,6 +82,9 @@ header {
     flex-direction: column;
     justify-content: center;
     display: flex;
+    border: 5px solid green;
+    border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 #skills {
@@ -85,11 +101,15 @@ header {
 
 .card {
     transition: transform 0.3s ease-in-out;
-        background-color: #db71ac; /* Rosa claro queimado */
-        border: 1px solid #993165; /* Marrom café */
-        margin-bottom: 20px;
-        height: 15%;
-
+    background-color: #db71ac; /* Rosa claro queimado */
+    border: 1px solid #993165; /* Marrom café */
+    margin-bottom: 20px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .card:hover {
@@ -107,7 +127,9 @@ header {
     align-items: center;
     background-image: url(https://i.pinimg.com/564x/49/09/9f/49099fda51804282b00c31a4215f411d.jpg);
     background-size: contain;
-    
+    border: 5px solid green;
+    border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 .icon {
