@@ -105,11 +105,13 @@ header {
     border: 1px solid #993165; /* Marrom café */
     margin-bottom: 20px;
     height: 100px;
-    width: 200px;
+    width: 190px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    border-radius: 100px;
+    margin-top: 40px;
 }
 
 .card:hover {
