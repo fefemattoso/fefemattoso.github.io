@@ -130,6 +130,7 @@ body {
     padding: 0;
     background-color: bisque;
     font-family: Griffy;
+    overflow-x: hidden;
 }
 
 header {
