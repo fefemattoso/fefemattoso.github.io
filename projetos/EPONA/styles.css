@@ -1,0 +1,192 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4e8; /* Tom terra muito claro */
+    align-items: center;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4a5d23; /* Verde musgo */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navegação */
+nav button {
+    background-color: #6c8e3d; /* Verde musgo mais claro */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #4a5d23;
+    transform: scale(1.05);
+}
+
+/* Contêiner de boas-vindas e login */
+.welcome-container, .login-container, .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0d8c0; /* Tom terra claro */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-out;
+}
+
+.welcome-container button, .login-container button {
+    background-color: #8c6d4b; /* Tom terra */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-container button:hover, .login-container button:hover {
+    background-color: #6f4f28; /* Tom terra mais escuro */
+    transform: scale(1.05);
+}
+
+/* Entradas de texto */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4a5d23; /* Verde musgo */
+    outline: none;
+}
+
+/* Botões gerais */
+button {
+    background-color: #8c6d4b; /* Tom terra */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #6f4f28; /* Tom terra mais escuro */
+    transform: scale(1.05);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+li {
+    background-color: #d0c4b2; /* Tom terra claro */
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; /* Centraliza o texto dentro do item da lista */
+}
+
+li:hover {
+    background-color: #c0b5a4; /* Tom terra um pouco mais escuro */
+    transform: scale(1.02);
+}
+
+li button {
+    background-color: #c65f3f; /* Tom terra mais escuro */
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li button:hover {
+    background-color: #a63d20; /* Tom terra mais escuro */
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .welcome-container button, .login-container button {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9rem;
+        max-width: 90%; /* Ajusta a largura em telas menores */
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+}
