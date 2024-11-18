@@ -1,0 +1,51 @@
+/* Estilos Personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Banner */
+.banner {
+    background-color: #EC5718;
+    padding: 100px 0;
+    color: white;
+}
+
+.img-fluid {
+    height: 30vh;
+    width: auto;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #c45201;
+    border-color: #EC5718;
+    border-radius: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #e69500;
+    border-color: #e69500;
+}
+
+/* Serviços e Produtos */
+.servicos img, .produtos img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.produtos h5, .servicos h4 {
+    color: #333;
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-img-top {
+    height: 35vh;
+    width: 16vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
