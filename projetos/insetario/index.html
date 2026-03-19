@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insetário Virtual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🌿 Capa inicial -->
+  <section class="capa" id="capa">
+    <div class="conteudo-capa">
+      <h1>Insetário Virtual</h1>
+      <h3>Uma coleção autoral de 24 insetos em exibição digital.<br>
+        <p>Pelos alunos do 4° semestre de Ciências Biológicas</p>
+      Clique abaixo para entrar na exposição.</h3>
+      <button id="entrar">Entrar na Exposição</button>
+    </div>
+  </section>
+
+  <!-- 🍂 Galeria de insetos -->
+  <section class="galeria" id="galeria">
+    <h2>Exposição dos Insetos</h2>
+    <div class="insetario">
+      <!-- Exemplo de item - duplique até 24 -->
+      <div class="inseto" data-ficha="inseto1">
+        <img src="img/inseto1.png" alt="Inseto 1">
+        <span>Inseto 1</span>
+      </div>
+
+      <div class="inseto" data-ficha="inseto2">
+        <img src="img/inseto2.png" alt="Inseto 2">
+        <span>Inseto 2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌱 Fichas técnicas -->
+  <div class="overlay" id="overlay"></div>
+
+  <div class="ficha" id="inseto1">
+    <h3>Joaninha (Coccinellidae)</h3>
+    <p><strong>Local:</strong> Jardim Botânico, Curitiba</p>
+    <p><strong>Data:</strong> 12/03/2024</p>
+    <p><strong>Fotógrafo:</strong> Ana Silva</p>
+    <h4>Curiosidades</h4>
+    <ul>
+      <li>Ajuda no controle biológico de pragas.</li>
+      <li>É símbolo de sorte em várias culturas.</li>
+    </ul>
+    <div class="fotos-extra">
+      <img src="img/inseto1_foto1.jpg" alt="Foto extra">
+    </div>
+    <button onclick="fecharFicha()">Fechar</button>
+  </div>
+
+  <div class="ficha" id="inseto2">
+    <h3>Besouro Hércules (Dynastes hercules)</h3>
+    <p><strong>Local:</strong> Floresta Amazônica</p>
+    <p><strong>Data:</strong> 20/07/2024</p>
+    <p><strong>Fotógrafo:</strong> João Pereira</p>
+    <h4>Curiosidades</h4>
+    <ul>
+      <li>Um dos maiores besouros do mundo.</li>
+      <li>Seu chifre é usado em disputas territoriais.</li>
+    </ul>
+    <button onclick="fecharFicha()">Fechar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

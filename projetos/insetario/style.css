@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&display=swap');
+
+:root {
+  --cor-madeira: #5c4522;
+  --cor-clara: #f7f2e9;
+  --transicao: 0.4s ease;
+}
+
+body {
+  margin: 0;
+  font-family: 'Crimson Pro', serif;
+  color: var(--cor-madeira);
+  background-color: var(--cor-clara);
+  overflow-x: hidden;
+}
+
+/* 🌿 CAPA */
+.capa {
+  height: 100vh;
+  background-image: url('fundo/madeira.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-capa {
+  background: rgba(255, 250, 240, 0.85);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  max-width: 600px;
+  animation: fadeIn 1s ease;
+}
+
+.conteudo-capa h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+button#entrar {
+  background-color: var(--cor-madeira);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+button#entrar:hover {
+  background-color: #3b2b16;
+  transform: scale(1.05);
+}
+
+/* 🪲 GALERIA */
+.galeria {
+  min-height: 100vh;
+  background-image: url('fundo/madeira.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  display: none;
+  animation: fadeIn 1s ease;
+}
+
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: rgba(255, 248, 230, 0.9);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+}
+
+.insetario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.inseto {
+  position: relative;
+  width: 150px;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+.inseto img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  transition: var(--transicao);
+}
+
+.inseto span {
+  display: block;
+  margin-top: 0.5rem;
+  background: rgba(255, 248, 230, 0.9);
+  border-radius: 6px;
+  padding: 0.3rem;
+  font-weight: 600;
+}
+
+.inseto:hover {
+  transform: translateY(-8px);
+}
+
+.inseto:hover img {
+  transform: scale(1.05);
+}
+
+/* 🌱 FICHAS */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 5;
+}
+
+.ficha {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: rgba(255, 250, 240, 0.98);
+  border: 2px solid var(--cor-madeira);
+  border-radius: 12px;
+  padding: 20px;
+  width: 360px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+  z-index: 10;
+  transition: var(--transicao);
+}
+
+.ficha.ativa {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ficha button {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 6px 12px;
+  background-color: var(--cor-madeira);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ficha button:hover {
+  background-color: #3b2d15;
+}
+
+.fotos-extra {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.fotos-extra img {
+  width: 100px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ✨ Animações */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

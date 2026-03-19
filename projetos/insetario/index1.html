@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insetário Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('fundo-madeira.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Georgia', serif;
+      background-color: #aa7632;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.5rem;
+      color: #2c1d0e;
+      text-shadow: 2px 2px 4px rgba(255, 215, 155, 0.6);
+    }
+
+    .insetario {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .inseto {
+      position: relative;
+      width: 150px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      background-color: transparent ;
+      border-radius: 10px;
+    }
+
+    .inseto img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .inseto:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px transparent;
+      border-radius: 5px;
+    }
+
+    /* Janela de ficha técnica */
+    .ficha {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 249, 237, 0.95);
+      border: 2px solid #5c4522;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      z-index: 10;
+      backdrop-filter: blur(4px);
+    }
+
+    .ficha h2 {
+      margin-top: 0;
+    }
+
+    .ficha button {
+      background: #5c4522;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .ficha button:hover {
+      background: #3e2f1c;
+    }
+
+    /* Fundo escurecido ao abrir ficha */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 5;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>🪲 Meu Insetário Virtual 🍄</h1>
+
+  <div class="insetario">
+    <div class="inseto" onclick="abrirFicha('joaninha')">
+      <img src="joaninha.png" alt="Joaninha">
+    </div>
+
+    <div class="inseto" onclick="abrirFicha('besouro')">
+      <img src="besouro.png" alt="Besouro">
+    </div>
+
+    <div class="inseto" onclick="abrirFicha('borboleta')">
+      <img src="borboleta.png" alt="Borboleta">
+    </div>
+  </div>
+
+  <!-- Fichas técnicas -->
+  <div class="overlay" id="overlay" onclick="fecharFicha()"></div>
+
+  <div class="ficha" id="joaninha">
+    <h2>Joaninha (Coccinellidae)</h2>
+    <p><b>Local:</b> Jardim Botânico, Curitiba</p>
+    <p><b>Data:</b> 12/03/2024</p>
+    <p><b>Fotógrafo:</b> Ana Silva</p>
+    <p>As joaninhas são pequenas e coloridas, conhecidas por se alimentarem de pulgões, ajudando no controle de pragas.</p>
+    <button onclick="fecharFicha()">Fechar</button>
+  </div>
+
+  <div class="ficha" id="besouro">
+    <h2>Besouro-Hércules (Dynastes hercules)</h2>
+    <p><b>Local:</b> Floresta Amazônica</p>
+    <p><b>Data:</b> 20/07/2024</p>
+    <p><b>Fotógrafo:</b> João Pereira</p>
+    <p>Um dos maiores besouros do mundo, famoso por seu grande chifre. Vive em regiões tropicais e úmidas.</p>
+    <button onclick="fecharFicha()">Fechar</button>
+  </div>
+
+  <div class="ficha" id="borboleta">
+    <h2>Borboleta-Monarca (Danaus plexippus)</h2>
+    <p><b>Local:</b> Serra do Cipó, MG</p>
+    <p><b>Data:</b> 03/11/2024</p>
+    <p><b>Fotógrafo:</b> Clara Nunes</p>
+    <p>Conhecida por suas longas migrações, a borboleta-monarca encanta por suas cores vivas e voo delicado.</p>
+    <button onclick="fecharFicha()">Fechar</button>
+  </div>
+
+  <script>
+    function abrirFicha(id) {
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function fecharFicha() {
+      document.getElementById('overlay').style.display = 'none';
+      document.querySelectorAll('.ficha').forEach(f => f.style.display = 'none');
+    }
+  </script>
+</body>
+</html>
